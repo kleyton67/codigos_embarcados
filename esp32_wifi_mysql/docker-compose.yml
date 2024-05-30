@@ -1,0 +1,12 @@
+# Após instalado o docker, apenas rode, docker compose up
+version: "3"
+services:
+  mariadb10.3:
+    image: mariadb:10.3
+    ports:
+      - 3313:3306 
+    environment:
+      - MYSQL_DATABASE=esp
+      - MYSQL_USER=esp
+      - MYSQL_PASSWORD=esp
+      - MYSQL_ROOT_PASSWORD=root
